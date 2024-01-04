@@ -1,3 +1,6 @@
+Паттерн - Idempotent reciever
+
+
 Архитектура решения
 
 ![image-20200512154011363](./README.assets/image-20200512154011363.png)
