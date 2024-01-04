@@ -1,4 +1,4 @@
-package ru.andreybaryshnikov.otus_2_14.users.model;
+package ru.andreybaryshnikov.otus_3_22.users.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;

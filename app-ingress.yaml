@@ -18,3 +18,10 @@ spec:
                 name: app
                 port:
                   number: 9000
+          - path: /order
+            pathType: Prefix
+            backend:
+              service:
+                name: app
+                port:
+                  number: 9000

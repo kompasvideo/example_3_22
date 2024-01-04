@@ -1,4 +1,4 @@
-package ru.andreybaryshnikov.otus_2_14.users.controller;
+package ru.andreybaryshnikov.otus_3_22.users.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import ru.andreybaryshnikov.otus_2_14.users.exception.UnauthorizedException;
-import ru.andreybaryshnikov.otus_2_14.users.model.User;
-import ru.andreybaryshnikov.otus_2_14.users.model.UserProfile;
-import ru.andreybaryshnikov.otus_2_14.users.model.dto.UserProfileDto;
-import ru.andreybaryshnikov.otus_2_14.users.service.UserService;
+import ru.andreybaryshnikov.otus_3_22.users.exception.UnauthorizedException;
+import ru.andreybaryshnikov.otus_3_22.users.model.User;
+import ru.andreybaryshnikov.otus_3_22.users.model.UserProfile;
+import ru.andreybaryshnikov.otus_3_22.users.model.dto.UserProfileDto;
+import ru.andreybaryshnikov.otus_3_22.users.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 

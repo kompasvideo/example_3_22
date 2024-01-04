@@ -1,4 +1,4 @@
-package ru.andreybaryshnikov.otus_2_14;
+package ru.andreybaryshnikov.otus_3_22;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;

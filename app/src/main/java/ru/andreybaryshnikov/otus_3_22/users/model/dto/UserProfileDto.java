@@ -1,4 +1,4 @@
-package ru.andreybaryshnikov.otus_2_14.users.model.dto;
+package ru.andreybaryshnikov.otus_3_22.users.model.dto;
 
 import lombok.Data;
 

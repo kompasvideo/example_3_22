@@ -1,10 +1,10 @@
-package ru.andreybaryshnikov.otus_2_14.users.service;
+package ru.andreybaryshnikov.otus_3_22.users.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.andreybaryshnikov.otus_2_14.users.model.UserProfile;
-import ru.andreybaryshnikov.otus_2_14.users.repository.UserRepository;
+import ru.andreybaryshnikov.otus_3_22.users.model.UserProfile;
+import ru.andreybaryshnikov.otus_3_22.users.repository.UserRepository;
 
 import java.util.Objects;
 import java.util.Optional;
