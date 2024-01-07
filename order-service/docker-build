@@ -5,9 +5,9 @@ kubectl create ns auth
 kubectl config set-context --current --namespace=auth
 cd "C:\My\Обучение\Otus\MicrosArchit\03\22\otus_3_22\app"
 
-docker build -t order-service:1.0 .
-docker tag order-service:1.0 andrey1andrey/order-service:1.0
-docker push andrey1andrey/order-service:1.0
+docker build -t order-service:1.1 .
+docker tag order-service:1.0 andrey1andrey/order-service:1.1
+docker push andrey1andrey/order-service:1.1
 
 helm install order-service chart/ --values chart/order-values.yaml
 kubectl apply -f orders-ingress.yaml

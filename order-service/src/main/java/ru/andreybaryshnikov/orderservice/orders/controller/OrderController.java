@@ -16,13 +16,15 @@ public class OrderController {
     private final OrderService orderService;
 
     @GetMapping
-    public Order get(@RequestHeader("X-UserId") String xUserId) {
+    public Order get(@RequestHeader("X-Request-Id") String xRequestId,
+                     @RequestHeader("X-UserId") String xUserId) {
         System.out.println("---");
-        System.out.println("--- X-UserId" + xUserId);
+        System.out.println("--- X-Request-Id - " + xRequestId);
+        System.out.println("--- X-UserId - " + xUserId);
         System.out.println("---");
         if (xUserId == null)
             throw new UnauthorizedException();
-        return orderService.getToId(UUID.fromString(xUserId));
+        return orderService.getToId(UUID.fromString(xRequestId));
     }
 
     @PostMapping
@@ -30,8 +32,8 @@ public class OrderController {
                         @RequestHeader("X-Request-Id") String xRequestId,
                         @RequestHeader("X-UserId") String xUserId) {
         System.out.println("---");
-        System.out.println("--- X-Request-Id" + xRequestId);
-        System.out.println("--- X-UserId" + xUserId);
+        System.out.println("--- X-Request-Id - " + xRequestId);
+        System.out.println("--- X-UserId - " + xUserId);
         System.out.println("---");
         if (xUserId == null)
             throw new UnauthorizedException();

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00b1ae7e-4690-4972-818e-6e11b71ff608" name="Changes" comment="final clear" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="postrges-helm-final" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2YUm5hDRUNa0vL229wA3eOfql04" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.otus_2_14 [clean].executor": "Run",
+    "Maven.otus_2_14 [package].executor": "Run",
+    "Maven.otus_3_22 [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/My/Обучение/Otus/MicrosArchit/03/22/otus_3_22/app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.40114942",
+    "settings.editor.selected.configurable": "application.passwordSafe",
+    "spring.configuration.checksum": "a1ab3d83e9911e1e6aa455479009d6e5",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.Otus214Application">
+    <configuration name="Otus214Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.andreybaryshnikov.otus_2_14.Otus214Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Otus214Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.andreybaryshnikov.otus_3_22.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00b1ae7e-4690-4972-818e-6e11b71ff608" name="Changes" comment="" />
+      <created>1700588352794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700588352794</updated>
+      <workItem from="1700588354945" duration="2737000" />
+      <workItem from="1700596156813" duration="1006000" />
+      <workItem from="1702204238820" duration="369000" />
+      <workItem from="1702206138786" duration="7569000" />
+      <workItem from="1703419869327" duration="14166000" />
+      <workItem from="1703609809386" duration="2575000" />
+      <workItem from="1703947494983" duration="2762000" />
+      <workItem from="1703968108437" duration="1934000" />
+      <workItem from="1704103730601" duration="17087000" />
+      <workItem from="1704175543633" duration="12362000" />
+      <workItem from="1704371605328" duration="6516000" />
+    </task>
+    <task id="LOCAL-00001" summary="add postgres">
+      <created>1702212516308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702212516308</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <created>1702221991823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702221991823</updated>
+    </task>
+    <task id="LOCAL-00003" summary="helm install">
+      <option name="closed" value="true" />
+      <created>1703610281813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703610281813</updated>
+    </task>
+    <task id="LOCAL-00004" summary="helm install 2">
+      <option name="closed" value="true" />
+      <created>1703971078310</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703971078310</updated>
+    </task>
+    <task id="LOCAL-00005" summary="post service final">
+      <option name="closed" value="true" />
+      <created>1704128668468</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704128668468</updated>
+    </task>
+    <task id="LOCAL-00006" summary="post service final + string">
+      <option name="closed" value="true" />
+      <created>1704180003111</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704180003111</updated>
+    </task>
+    <task id="LOCAL-00007" summary="final">
+      <option name="closed" value="true" />
+      <created>1704187653325</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704187653325</updated>
+    </task>
+    <task id="LOCAL-00008" summary="final clear">
+      <option name="closed" value="true" />
+      <created>1704188334822</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704188334822</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add postgres" />
+    <MESSAGE value="1" />
+    <MESSAGE value="helm install" />
+    <MESSAGE value="helm install 2" />
+    <MESSAGE value="post service final" />
+    <MESSAGE value="post service final + string" />
+    <MESSAGE value="final" />
+    <MESSAGE value="final clear" />
+    <option name="LAST_COMMIT_MESSAGE" value="final clear" />
+  </component>
+</project>
