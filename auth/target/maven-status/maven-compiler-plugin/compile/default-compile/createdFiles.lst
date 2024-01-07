@@ -1,8 +1,0 @@
-ru\andreybaryshnikov\otus_auth\exception\UnauthorizedException.class
-ru\andreybaryshnikov\otus_auth\OtusAuthApplication.class
-ru\andreybaryshnikov\otus_auth\model\LoginDto.class
-ru\andreybaryshnikov\otus_auth\controller\AuthController.class
-ru\andreybaryshnikov\otus_auth\model\User.class
-ru\andreybaryshnikov\otus_auth\repository\UserRepository.class
-ru\andreybaryshnikov\otus_auth\exception\ErrorHandler.class
-ru\andreybaryshnikov\otus_auth\model\UserDto.class
