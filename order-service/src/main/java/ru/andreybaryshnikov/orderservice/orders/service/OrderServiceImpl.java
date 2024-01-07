@@ -19,8 +19,9 @@ public class OrderServiceImpl implements OrderService{
     private final OrderRepository orderRepository;
 
     @Override
-    public Order create(OrderDto orderDto) {
+    public Order create(OrderDto orderDto, String xRequestId) {
         Order order = mapper.map(orderDto, Order.class);
+        order.setId(UUID.fromString(xRequestId));
         Optional<Order> orderOptional = orderRepository.findById(order.getId());
         if (orderOptional.isPresent()) {
             throw new ConflictException();

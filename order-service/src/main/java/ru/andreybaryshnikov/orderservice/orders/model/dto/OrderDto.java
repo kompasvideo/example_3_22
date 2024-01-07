@@ -8,7 +8,6 @@ import java.util.UUID;
 @AllArgsConstructor
 @Data
 public class OrderDto {
-    private UUID id;
     private String name;
     private String count;
     private double price;

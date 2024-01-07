@@ -1,6 +1,5 @@
 package ru.andreybaryshnikov.orderservice.orders.controller;
 
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import ru.andreybaryshnikov.orderservice.orders.exception.UnauthorizedException;
@@ -17,18 +16,25 @@ public class OrderController {
     private final OrderService orderService;
 
     @GetMapping
-    public Order get(@RequestParam UUID uuid, HttpServletRequest request) {
-        String xUserId = request.getHeader("X-UserId");
+    public Order get(@RequestHeader("X-UserId") String xUserId) {
+        System.out.println("---");
+        System.out.println("--- X-UserId" + xUserId);
+        System.out.println("---");
         if (xUserId == null)
             throw new UnauthorizedException();
-        return orderService.getToId( uuid);
+        return orderService.getToId(UUID.fromString(xUserId));
     }
 
     @PostMapping
-    public Order create(@RequestBody OrderDto orderRequest, HttpServletRequest request) {
-        String xUserId = request.getHeader("X-UserId");
+    public Order create(@RequestBody OrderDto orderDto,
+                        @RequestHeader("X-Request-Id") String xRequestId,
+                        @RequestHeader("X-UserId") String xUserId) {
+        System.out.println("---");
+        System.out.println("--- X-Request-Id" + xRequestId);
+        System.out.println("--- X-UserId" + xUserId);
+        System.out.println("---");
         if (xUserId == null)
             throw new UnauthorizedException();
-        return orderService.create(orderRequest);
+        return orderService.create(orderDto, xRequestId);
     }
 }
