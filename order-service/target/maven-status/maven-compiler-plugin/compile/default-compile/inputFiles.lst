@@ -1,11 +1,11 @@
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/exception/BadRequestException.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/exception/ConflictException.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/model/dto/OrderDto.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/service/OrderServiceImpl.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/model/Order.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/exception/ErrorHandler.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/controller/OrderController.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/exception/UnauthorizedException.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/repository/OrderRepository.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/service/OrderService.java
-/home/andrey/IdeaProjects/otus/otus_3_22/order-service/src/main/java/ru/andreybaryshnikov/orderservice/orders/OrderServiceApplication.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\exception\ErrorHandler.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\service\OrderServiceImpl.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\exception\BadRequestException.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\model\dto\OrderDto.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\repository\OrderRepository.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\exception\ConflictException.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\service\OrderService.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\controller\OrderController.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\model\Order.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\OrderServiceApplication.java
+C:\My\Обучение\Otus\MicrosArchit\03\22 Идемпотентость и коммутативность API в HTTP и очередях  ДЗ\otus_3_22\order-service\src\main\java\ru\andreybaryshnikov\orderservice\orders\exception\UnauthorizedException.java
