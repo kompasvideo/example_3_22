@@ -122,10 +122,16 @@
 			],
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "X-Request-Id",
+						"value": "eafbadf7-c5ba-4fbe-a711-d6938071bb16",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"eafbadf7-c5ba-4fbe-a711-d6938071bb16\",\n    \"name\": \"name1\",\n    \"count\": \"10\",\n    \"price\": 10\n}",
+					"raw": "{    \n    \"name\": \"name1\",\n    \"count\": \"10\",\n    \"price\": 10\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -170,10 +176,16 @@
 			],
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "X-Request-Id",
+						"value": "eafbadf7-c5ba-4fbe-a711-d6938071bb16",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"eafbadf7-c5ba-4fbe-a711-d6938071bb16\",\n    \"name\": \"name1\",\n    \"count\": \"10\",\n    \"price\": 10\n}",
+					"raw": "{\n    \"name\": \"name1\",\n    \"count\": \"10\",\n    \"price\": 10\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -214,21 +226,20 @@
 						"key": "Authorization",
 						"value": "Bearer {{IDtoken}}",
 						"type": "text"
+					},
+					{
+						"key": "X-Request-Id",
+						"value": "eafbadf7-c5ba-4fbe-a711-d6938071bb16",
+						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/order?uuid=eafbadf7-c5ba-4fbe-a711-d6938071bb16",
+					"raw": "{{baseUrl}}/order",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"order"
-					],
-					"query": [
-						{
-							"key": "uuid",
-							"value": "eafbadf7-c5ba-4fbe-a711-d6938071bb16"
-						}
 					]
 				}
 			},
@@ -251,20 +262,20 @@
 			],
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "X-Request-Id",
+						"value": "eafbadf7-c5ba-4fbe-a711-d6938071bb15",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "{{baseUrl}}/order?uuid=eafbadf7-c5ba-4fbe-a711-d6938071bb15",
+					"raw": "{{baseUrl}}/order",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"order"
-					],
-					"query": [
-						{
-							"key": "uuid",
-							"value": "eafbadf7-c5ba-4fbe-a711-d6938071bb15"
-						}
 					]
 				}
 			},
