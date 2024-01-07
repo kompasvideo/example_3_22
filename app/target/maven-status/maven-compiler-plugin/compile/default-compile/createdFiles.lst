@@ -1,0 +1,11 @@
+ru/andreybaryshnikov/users/model/UserProfile$UserProfileBuilder.class
+ru/andreybaryshnikov/users/exception/UnauthorizedException.class
+ru/andreybaryshnikov/users/exception/ErrorHandler.class
+ru/andreybaryshnikov/users/model/User.class
+ru/andreybaryshnikov/users/model/dto/UserProfileDto.class
+ru/andreybaryshnikov/users/model/UserProfile.class
+ru/andreybaryshnikov/users/controller/UserController.class
+ru/andreybaryshnikov/users/service/UserServiceImpl.class
+ru/andreybaryshnikov/users/service/UserService.class
+ru/andreybaryshnikov/users/repository/UserRepository.class
+ru/andreybaryshnikov/Application.class

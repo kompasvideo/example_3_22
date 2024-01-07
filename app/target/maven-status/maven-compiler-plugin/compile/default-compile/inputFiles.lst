@@ -1,0 +1,10 @@
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/users/exception/UnauthorizedException.java
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/users/model/User.java
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/users/model/UserProfile.java
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/users/repository/UserRepository.java
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/users/exception/ErrorHandler.java
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/users/service/UserServiceImpl.java
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/users/controller/UserController.java
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/Application.java
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/users/model/dto/UserProfileDto.java
+/home/andrey/IdeaProjects/otus/otus_3_22/app/src/main/java/ru/andreybaryshnikov/users/service/UserService.java

@@ -21,14 +21,14 @@ kubectl config set-context --current --namespace=auth
 
 Собираем и запускаем с помощью helm сервис аутентификации
 ```
-cd auth
-helm install chart2 chart/ --values chart/auth-values.yaml
+cd auth-service
+helm install auth chart/ --values chart/auth-values.yaml
 ```
 
 И приложение, в котором мы будем проверять аутентификацию 
 ```
 cd app
-helm install chart1 chart/ --values chart/app-values.yaml
+helm install app chart/ --values chart/app-values.yaml
 ```
 
 Применяем манифст для сервиса аутентификации
@@ -78,6 +78,20 @@ spec:
 ```
 kubectl apply -f app-ingress.yaml
 ```
+
+Собираем и запускаем с помощью helm сервис заказы
+```
+cd order-service
+helm install order-service chart/ --values chart/order-values.yaml
+```
+
+Применяем манифст для сервиса закаов
+```
+kubectl apply -f orders-ingress.yaml
+```
+
+
+
 
 После настройки
 Запускаем тесты с помощью newman и проверяем, что все корректно запустилось. 

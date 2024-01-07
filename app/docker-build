@@ -9,5 +9,5 @@ docker build -t otus322-app .
 docker tag otus322-app andrey1andrey/otus322-app
 docker push andrey1andrey/otus322-app
 
-helm install chart1 chart/ --values chart/app-values.yaml
+helm install app chart/ --values chart/app-values.yaml
 kubectl apply -f app-ingress.yaml
