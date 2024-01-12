@@ -10,6 +10,8 @@
         <module name="auth-service" />
         <module name="order-service" />
         <module name="users" />
+        <module name="notification-service" />
+        <module name="billing-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +19,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="app" options="-parameters" />
       <module name="auth-service" options="-parameters" />
+      <module name="billing-service" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="users" options="-parameters" />
     </option>

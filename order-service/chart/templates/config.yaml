@@ -22,5 +22,5 @@ data:
   SPRING_JPA_DATABASE: "{{ .Values.config.database }}"
   SPRING_JPA_HIBERNATE_DDL_AUTO: "{{ .Values.config.ddl }}"
   SPRING_DATASOURCE_DRIVER_CLASS_NAME: "{{ .Values.config.driver }}"
-  PROFILES_URI: http://auth.auth:9000/
-  JWT_SECRET: "{{ .Values.deployment.app.jwtsecret }}"
+  BILLING_URI: http://billing.auth:9000/billing/
+  NOTIFICATION_URI: http://notification.auth:9000/notification/send

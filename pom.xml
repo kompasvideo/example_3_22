@@ -7,6 +7,8 @@
         <module>auth-service</module>
         <module>app</module>
         <module>order-service</module>
+        <module>billing-service</module>
+        <module>notification-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -1,3 +1,3 @@
 FROM amazoncorretto:17
-COPY target/*.jar app.jar
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+COPY target/*.jar order.jar
+ENTRYPOINT ["java", "-jar", "/order.jar"]

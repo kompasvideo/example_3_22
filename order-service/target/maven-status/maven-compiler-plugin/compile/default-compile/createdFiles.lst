@@ -1,11 +1,13 @@
 ru\andreybaryshnikov\orderservice\orders\exception\ConflictException.class
 ru\andreybaryshnikov\orderservice\orders\model\dto\OrderDto.class
-ru\andreybaryshnikov\orderservice\orders\OrderServiceApplication.class
-ru\andreybaryshnikov\orderservice\orders\exception\BadRequestException.class
 ru\andreybaryshnikov\orderservice\orders\controller\OrderController.class
 ru\andreybaryshnikov\orderservice\orders\exception\UnauthorizedException.class
 ru\andreybaryshnikov\orderservice\orders\model\Order.class
-ru\andreybaryshnikov\orderservice\orders\repository\OrderRepository.class
 ru\andreybaryshnikov\orderservice\orders\service\OrderService.class
+ru\andreybaryshnikov\orderservice\orders\model\Money.class
+ru\andreybaryshnikov\orderservice\orders\model\MinusMoney.class
+ru\andreybaryshnikov\orderservice\orders\OrderServiceApplication.class
+ru\andreybaryshnikov\orderservice\orders\exception\BadRequestException.class
+ru\andreybaryshnikov\orderservice\orders\repository\OrderRepository.class
 ru\andreybaryshnikov\orderservice\orders\service\OrderServiceImpl.class
 ru\andreybaryshnikov\orderservice\orders\exception\ErrorHandler.class

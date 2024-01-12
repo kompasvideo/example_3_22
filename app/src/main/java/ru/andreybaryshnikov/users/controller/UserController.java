@@ -2,17 +2,12 @@ package ru.andreybaryshnikov.users.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ru.andreybaryshnikov.users.exception.UnauthorizedException;
 import ru.andreybaryshnikov.users.model.User;
 import ru.andreybaryshnikov.users.model.UserProfile;
 import ru.andreybaryshnikov.users.model.dto.UserProfileDto;
 import ru.andreybaryshnikov.users.service.UserService;
-
-import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 @RequiredArgsConstructor
@@ -21,16 +16,19 @@ public class UserController {
     private final ModelMapper modelMapper;
 
     @GetMapping("/users/me")
-    public User me(HttpServletRequest request) {
-        String xUserId = request.getHeader("X-UserId");
+    public User me(@RequestHeader("X-UserId") String xUserId,
+                   @RequestHeader("X-User") String xUser,
+                   @RequestHeader("X-Email") String xEmail,
+                   @RequestHeader("X-First-Name") String xFirstName,
+                   @RequestHeader("X-Last-Name") String xLastName) {
         if (xUserId == null)
             throw new UnauthorizedException();
         User user = new User();
         user.setId(Long.parseLong(xUserId));
-        user.setLogin(request.getHeader("X-User"));
-        user.setEmail(request.getHeader("X-Email"));
-        user.setFirst_name(request.getHeader("X-First-Name"));
-        user.setLast_name(request.getHeader("X-Last-Name"));
+        user.setLogin(xUser);
+        user.setEmail(xEmail);
+        user.setFirst_name(xFirstName);
+        user.setLast_name(xLastName);
         UserProfile userProfile = userService.getUserProfileById(user.getId());
         if (userProfile != null) {
             user.setAvatar_uri(userProfile.getAvatar_uri());
@@ -40,16 +38,20 @@ public class UserController {
     }
 
     @PutMapping("/users/me")
-    public UserProfile updateMe(@RequestBody UserProfileDto userProfileDto, HttpServletRequest request) {
-        String xUserId = request.getHeader("X-UserId");
+    public UserProfile updateMe(@RequestBody UserProfileDto userProfileDto,
+                                @RequestHeader("X-UserId") String xUserId,
+                                @RequestHeader("X-User") String xUser,
+                                @RequestHeader("X-Email") String xEmail,
+                                @RequestHeader("X-First-Name") String xFirstName,
+                                @RequestHeader("X-Last-Name") String xLastName) {
         if (xUserId == null)
             throw new UnauthorizedException();
         User user = new User();
         user.setId(Long.parseLong(xUserId));
-        user.setLogin(request.getHeader("X-User"));
-        user.setEmail(request.getHeader("X-Email"));
-        user.setFirst_name(request.getHeader("X-First-Name"));
-        user.setLast_name(request.getHeader("X-Last-Name"));
+        user.setLogin(xUser);
+        user.setEmail(xEmail);
+        user.setFirst_name(xFirstName);
+        user.setLast_name(xLastName);
         UserProfile userProfile = modelMapper.map(userProfileDto, UserProfile.class);
         userProfile = userService.updateUser(user.getId(), userProfile);
         return userProfile;

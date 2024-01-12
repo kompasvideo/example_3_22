@@ -10,12 +10,11 @@ deployment:
   app:
     name: order
     type: NodePort
-    image: andrey1andrey/order-service:1.1
+    image: andrey1andrey/order-service
     port: 9000
     sport: "9000"
     replicas: 1
     uri: "order-service"
-    jwtsecret: secret
   db:
     name: order-postgresql
     type: NodePort

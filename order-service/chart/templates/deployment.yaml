@@ -55,16 +55,16 @@ spec:
                 secretKeyRef:
                   name: {{ .Values.secret.name }}
                   key: SPRING_DATASOURCE_PASSWORD
-            - name: PROFILES_URI
+            - name: BILLING_URI
               valueFrom:
                 configMapKeyRef:
                   name: {{ .Values.config.name }}
-                  key: PROFILES_URI
-            - name: JWT_SECRET
+                  key: BILLING_URI
+            - name: NOTIFICATION_URI
               valueFrom:
                 configMapKeyRef:
                   name: {{ .Values.config.name }}
-                  key: JWT_SECRET
+                  key: NOTIFICATION_URI
 
 ---
 apiVersion: apps/v1

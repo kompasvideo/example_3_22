@@ -29,6 +29,6 @@ public class OrderController {
                         @RequestHeader("X-UserId") String xUserId) {
         if (xUserId == null)
             throw new UnauthorizedException();
-        return orderService.create(orderDto, xRequestId);
+        return orderService.create(orderDto, xRequestId, xUserId);
     }
 }

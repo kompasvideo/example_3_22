@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "f80657af-80de-4623-9cb1-50100ba1c205",
-		"name": "Otus_3.22",
+		"_postman_id": "76cd075f-42ea-4b16-9343-70681ad910a0",
+		"name": "Otus_3.22 new",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18751342"
 	},
@@ -120,6 +120,9 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
 			"request": {
 				"method": "POST",
 				"header": [
@@ -131,7 +134,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{    \n    \"name\": \"name1\",\n    \"count\": \"10\",\n    \"price\": 10\n}",
+					"raw": "{\n    \"name\": \"name1\",\n    \"count\": \"10\",\n    \"price\": 10\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -213,7 +216,8 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
-							"});"
+							"});",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -234,12 +238,18 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/order",
+					"raw": "{{baseUrl}}/order?uuid=eafbadf7-c5ba-4fbe-a711-d6938071bb16",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"order"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "eafbadf7-c5ba-4fbe-a711-d6938071bb16"
+						}
 					]
 				}
 			},
@@ -254,7 +264,8 @@
 						"exec": [
 							"pm.test(\"Status code is 400\", function () {",
 							"    pm.response.to.have.status(400);",
-							"});"
+							"});",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -270,12 +281,95 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/order",
+					"raw": "{{baseUrl}}/order?uuid=eafbadf7-c5ba-4fbe-a711-d6938071bb15",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"order"
+					],
+					"query": [
+						{
+							"key": "uuid",
+							"value": "eafbadf7-c5ba-4fbe-a711-d6938071bb15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my проверить данные о пользователе 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"test token data\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.email).to.eql(pm.collectionVariables.get(\"email\"))",
+							"    pm.expect(jsonData.last_name).to.eql(pm.collectionVariables.get(\"lastName\"))",
+							"    pm.expect(jsonData.first_name).to.eql(pm.collectionVariables.get(\"firstName\"))",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{IDtoken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/auth",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my получить данные о пользователе 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"test token data\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.email).to.eql(pm.collectionVariables.get(\"email\"))",
+							"    pm.expect(jsonData.last_name).to.eql(pm.collectionVariables.get(\"lastName\"))",
+							"    pm.expect(jsonData.first_name).to.eql(pm.collectionVariables.get(\"firstName\"))",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/users/me",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"me"
 					]
 				}
 			},
@@ -297,57 +391,48 @@
 			"script": {
 				"type": "text/javascript",
 				"exec": [
-					"tests[\"[INFO] Request: \" + (('data' in request) ? request['data'] : '') ] = true;",
-					"tests[\"[INFO] Response: \" + responseBody] = true;"
+					""
 				]
 			}
 		}
 	],
 	"variable": [
 		{
-			"key": "IDtoken",
-			"value": "",
+			"key": "baseUrl",
+			"value": "http://arch.homework",
 			"type": "string"
 		},
 		{
 			"key": "password",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
 			"key": "email",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
 			"key": "login",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
 			"key": "firstName",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
 			"key": "lastName",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
 			"key": "avatar_uri",
-			"value": "http://arch.homework",
-			"type": "string"
+			"value": ""
 		},
 		{
 			"key": "age",
-			"value": "http://arch.homework",
-			"type": "number"
+			"value": ""
 		},
 		{
-			"key": "baseUrl",
-			"value": "http://arch.homework",
-			"type": "string"
+			"key": "IDtoken",
+			"value": "NKnNSnp9IVOtoeihVZ9Xhe7lYIHNCzMefrcdTruU"
 		}
 	]
 }

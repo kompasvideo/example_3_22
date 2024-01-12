@@ -15,7 +15,6 @@ deployment:
     sport: "9000"
     replicas: 1
     uri: "app-service"
-    jwtsecret: secret
   db:
     name: app-postgresql
     type: NodePort
